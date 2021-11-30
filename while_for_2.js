@@ -1,4 +1,4 @@
-outer: for (let i = prompt(`Input number > 100`,''); i < 100;) {
+outer: for (let i = prompt(`Input number > 100`,''); i < 101;) {
     if (!i) break outer  
     i = prompt(`Input number > 100`,'')
     
