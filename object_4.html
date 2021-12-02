@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+  <script>
+
+
+
+let menu = {
+  width: 200,
+  height: 300,
+  title: "My menu"
+};
+
+
+
+
+
+
+multiplyNumeric(menu)
+
+
+function multiplyNumeric(obj){
+
+
+
+    for (let key in obj) {
+        
+       if (typeof obj[key]==='number'){
+
+        //alert(obj[key])
+        let newNumeric=obj[key]*2
+        //alert(newNumeric)
+       // alert(key)
+      
+       //key =newNumeric
+obj[key]=newNumeric
+       //alert(key)
+ 
+  //alert(obj[key])
+
+
+       }
+     //  alert(key)
+ 
+      // alert(obj[key])
+       
+       
+        //alert(newNumeric)
+      
+       // alert(obj[key])
+    }
+
+
+
+}
+
+
+alert(menu.width)
+alert(menu.height)
+alert(menu.title)
+
+
+
+
+
+
+
+  </script>
+
+</body>
+
+</html>
