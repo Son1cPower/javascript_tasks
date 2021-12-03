@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+  <script>
+
+
+let calculator= {
+    
+read: function(){
+ this.a=+prompt("Введите А",'0')
+ this.b=+prompt("Введите B",'0')
+},
+sum:function(){
+   
+    return this.a + this.b
+
+},
+mul:function(){
+   
+   return this.a * this.b
+
+}
+};
+
+
+calculator.read();
+alert( calculator.sum() );
+alert( calculator.mul() );
+
+
+
+
+
+  </script>
+
+</body>
+
+</html>
