@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    function readNumber() {
+
+        let number
+        number = prompt(`Введите число"`, '')
+        if (number === '' || number === null) {
+            alert(null)}
+
+           else if (isNaN(number)) {
+                readNumber()
+            } else if (isFinite(number) === true) {
+
+                alert(number)
+            }
+
+
+
+    }
+   readNumber()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
