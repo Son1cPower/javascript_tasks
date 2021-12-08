@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+
+    function checkSpam(str) {
+      if (str.length===0){
+
+          str=' '
+      }
+      str=str.toLowerCase()
+        alert(str.includes('viagra') || (str.includes('xxx')))
+
+
+    }
+
+
+    checkSpam('buy ViAgRA now')
+    checkSpam('free xxxxx')
+    checkSpam("innocent rabbit")
+
+    checkSpam("")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
