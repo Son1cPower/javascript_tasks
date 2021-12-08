@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+
+    function truncate(str, maxlength) {
+      if (str.length===0){
+
+          alert(' ')
+      }
+else if (str.length>maxlength) {
+alert(str.slice(0, maxlength-1)+"…")
+      }
+else {
+    alert (str)
+      }
+
+    }
+
+
+
+    //let max=str.length
+
+     //   alert(`${str}`[0].toUpperCase() + str.slice(0, max))
+
+
+    truncate("Вот, что мне хотелось бы сказать на эту тему:", 20)
+
+    truncate("Всем привет!", 20)
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
