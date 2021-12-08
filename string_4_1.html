@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+
+    function extractCurrencyValue(value) {
+
+        let amount=""
+        for (let i = 0; i < value.length; i++) {
+            if (isFinite(value[i]) || (value[i]==='.')) {
+
+amount=amount+value[i]
+            }
+
+        }
+alert(amount)
+        return +amount
+
+    }
+
+
+
+
+
+
+     alert( extractCurrencyValue('$1s2d0.5asdsad') === 120.5 )
+
+
+
+
+
+
+</script>
+</body>
+</html>
