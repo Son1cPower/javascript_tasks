@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+function getMaxSubSum(value) {
+    let arr = (value)
+
+
+    let sum = 0;
+    let maxSum = 0
+    for (let number of arr) {
+
+        sum += number;
+        if (sum > maxSum) {
+            maxSum = sum
+        } else if (sum < 0) {
+            sum = 0
+        }
+
+
+    }
+
+    alert(maxSum)
+}
+
+getMaxSubSum([-1, 2, 3, -9])
+getMaxSubSum([2, -1, 2, 3, -9])
+getMaxSubSum([-1, 2, 3, -9, 11])
+getMaxSubSum([-2, -1, 1, 2])
+getMaxSubSum([100, -9, 2, -3, 5])
+getMaxSubSum([1, 2, 3])
+
+</script>
+</body>
+</html>
