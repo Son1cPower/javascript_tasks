@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+
+function sumInput() {
+    let arr = []
+    let amount = 0
+
+    function input() {
+        let number
+        number = prompt('Введите номер')
+        if (number === '' || number === null) {
+
+        } else if (isFinite(number)) {
+
+            arr.push((number))
+
+            input()
+        }
+    }
+    input()
+
+
+
+
+        for (let i=0; i<arr.length; i++){
+
+          amount+=Number(arr[i])
+        }
+        alert(amount)
+     }
+
+sumInput()
+
+</script>
+</body>
+</html>
