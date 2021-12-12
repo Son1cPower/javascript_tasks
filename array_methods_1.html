@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+
+function camelize(str) {
+
+    let arr = str.split('-')
+
+
+
+
+
+    let newArr = arr.map (uppercase1element => uppercase1element ?
+        uppercase1element[0].toUpperCase() + uppercase1element.slice(1).toLowerCase() : '')
+
+if (newArr[0]!=='') {
+ newArr[0]=newArr[0][0].toLowerCase()+newArr[0].slice(1)
+}
+
+let row = newArr.join('')
+
+
+
+
+return row
+     }
+
+
+alert(camelize("BACkg1round-cOLor") === "backg1roundColor")
+alert(camelize("background-color") === 'backgroundColor')
+alert(camelize("list-style-image") === 'listStyleImage')
+alert(camelize("-webkit-transition") === 'WebkitTransition')
+
+</script>
+</body>
+</html>
