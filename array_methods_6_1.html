@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+
+
+let cal = function () {
+
+
+    this.calculate = function (str){
+        let arr = str.split(' ')
+        let sum = 0
+
+        let a =+ arr[0]
+        let b=+arr[2]
+        if (arr[1]==="+"){
+
+            sum = a + b
+            return sum
+        }
+      else  if (arr[1]==="-"){
+
+            sum = a - b
+            return sum
+        }
+    }
+
+
+}
+
+
+
+
+  let calc = new cal;
+
+  alert( calc.calculate("11 - 7") ); 
+
+</script>
+</body>
+</html>
