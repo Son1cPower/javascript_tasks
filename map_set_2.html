@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era",'stas', "hectares"];
+
+   // alert( aclean(arr) ); // "nap,teachers,ear" или "PAN,cheaters,era"
+
+
+
+alert(aclean(arr))
+
+
+function aclean(arr){
+  let newArr2
+   newArr2= arr.map(item => item.toLowerCase().split('').sort().join(''))
+
+   //  console.dir(newArr2 )
+   // alert(newArr2)
+    let newArr=[]
+    console.log(arr)
+    console.log(newArr2)
+
+    let sortedNames
+
+    sortedNames =   arr.filter( function  (item, index) {
+        if (!newArr2.slice(0,  index).includes( item.toLowerCase().split('').sort().join('')) ) {
+            return item
+        }
+     })
+
+    return sortedNames
+
+
+
+
+
+}
+
+</script>
+</body>
+</html>

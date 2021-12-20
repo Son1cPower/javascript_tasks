@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    function unique(arr) {
+        let set = new Set()
+
+for (let value of arr) {
+
+    set.add(value)
+}
+
+       // console.dir(set )
+        return set
+    }
+
+    let values = ["Hare", "Krishna", "Hare", "Krishna",
+        "Krishna", "Krishna", "Hare", "Hare", ":-O"
+    ];
+
+    alert( unique(values) ); // Hare,Krishna,:-O
+
+    //unique(values)
+
+
+
+
+
+</script>
+</body>
+</html>
